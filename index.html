@@ -27,20 +27,7 @@
       transition: background-color 0.5s ease, color 0.5s ease;
       position: relative;
     }
-    
-    .hamburger {
-  margin-left: 20px; /* or more depending on your design */
-    }
-    
-    .navbar {
-  justify-content: space-between;
-  padding: 0 20px; /* adds spacing on left and right */
-    }
-    
-.logo {
-  margin-right: 20px;
-}
-  
+
     canvas#stars {
       position: fixed;
       top: 0;
@@ -52,21 +39,21 @@
     }
 
     header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  background-color: #f0f0f0;
-  display: flex;
-  align-items: center;
-  padding: 10px 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
+      padding: 60px 20px;
+      text-align: center;
+      background-color: var(--accent);
+      color: white;
+    }
 
-body {
-  padding-top: 80px; /* Prevent content from hiding under header */
-}
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
 
     section {
       padding: 60px 20px;
@@ -317,7 +304,6 @@ body {
   </style>
 </head>
 <body>
-  
   <canvas id="stars"></canvas>
 
   <div id="overlay" onclick="toggleMenu()"></div>
@@ -346,13 +332,15 @@ body {
   </nav>
 
 <header>
+  <a href="index.html">
     <img src="./LAFR.png" alt="Lafriki Logo" style="height: 80px;">
-   
-  </header>
+  </a>
+</header>
+  
 <section class="book-banner">
   <h2>New Releases</h2>
   <div class="banner-content">
-    <img src="./cover.jpg" alt="Exploring Nothingness Book Cover"style="max-width: 40%; height: auto;"class="banner-image" />
+    <img src="./cover.jpg" alt="Exploring Nothingness Book Cover"style="max-width: 50%; height: auto;"class="banner-image" />
     <div class="book-details">
       <h3>Exploring Nothingness</h3>
       <p><strong>Release Date:</strong> May 6th, 2025</p>
