@@ -52,27 +52,21 @@
     }
 
     header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #f0f0f0;
   display: flex;
   align-items: center;
   padding: 10px 20px;
-  background-color: #f0f0f0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-header img {
-  height: 50px; /* Smaller logo */
-  margin-right: 15px;
+body {
+  padding-top: 80px; /* Prevent content from hiding under header */
 }
-
-header h1 {
-  font-size: 1.5rem; /* Smaller text */
-  margin: 0;
-}
-    }
-
-    header p {
-      font-size: 1.2em;
-      margin-top: 10px;
-    }
 
     section {
       padding: 60px 20px;
