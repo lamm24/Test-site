@@ -389,6 +389,14 @@
   </footer>
 
  <script>
+   function performSearch(event) {
+    event.preventDefault();
+    const query = document.getElementById('searchQuery').value;
+    const searchUrl = `https://www.google.com/search?q=site:ayoublafriki.github.io/Lafriki+${encodeURIComponent(query)}`;
+    window.open(searchUrl, '_blank');
+  }
+
+   
   function setDarkMode(isDark) {
     const body = document.body;
     const button = document.querySelector('.dark-toggle');
