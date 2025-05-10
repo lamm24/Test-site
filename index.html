@@ -250,6 +250,32 @@
     }
 
     /* Search section */
+     .search-container {
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+    margin: 10px auto;
+  }
+
+  .search-container input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+  }
+
+  .search-container button {
+    background: #333;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    padding: 8px;
+    cursor: pointer;
+  }
+
+  .search-container button svg {
+    fill: white;
+  }
     .menu-header {
       display: flex;
       justify-content: flex-end;
