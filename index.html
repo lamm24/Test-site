@@ -304,6 +304,15 @@
   </style>
 </head>
 <body>
+  <form class="search-container" onsubmit="performSearch(event)">
+  <input type="text" id="searchQuery" placeholder="Search Lafriki..." required>
+  <button type="submit" aria-label="Search">
+    <!-- Search Icon SVG -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+      <path d="M21.71 20.29l-3.39-3.39A9 9 0 1011 20a8.96 8.96 0 007.9-4.68l3.39 3.39a1 1 0 001.42-1.42zM11 18a7 7 0 117-7 7 7 0 01-7 7z"/>
+    </svg>
+  </button>
+  </form>
   <canvas id="stars"></canvas>
 
   <div id="overlay" onclick="toggleMenu()"></div>
