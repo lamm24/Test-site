@@ -250,32 +250,6 @@
     }
 
     /* Search section */
-     .search-container {
-    display: flex;
-    align-items: center;
-    max-width: 300px;
-    margin: 10px auto;
-  }
-
-  .search-container input[type="text"] {
-    flex: 1;
-    padding: 8px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px 0 0 4px;
-  }
-
-  .search-container button {
-    background: #333;
-    border: none;
-    border-radius: 0 4px 4px 0;
-    padding: 8px;
-    cursor: pointer;
-  }
-
-  .search-container button svg {
-    fill: white;
-  }
     .menu-header {
       display: flex;
       justify-content: flex-end;
@@ -330,15 +304,6 @@
   </style>
 </head>
 <body>
-  <form class="search-container" onsubmit="performSearch(event)">
-  <input type="text" id="searchQuery" placeholder="Search Lafriki..." required>
-  <button type="submit" aria-label="Search">
-    <!-- Search Icon SVG -->
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-      <path d="M21.71 20.29l-3.39-3.39A9 9 0 1011 20a8.96 8.96 0 007.9-4.68l3.39 3.39a1 1 0 001.42-1.42zM11 18a7 7 0 117-7 7 7 0 01-7 7z"/>
-    </svg>
-  </button>
-  </form>
   <canvas id="stars"></canvas>
 
   <div id="overlay" onclick="toggleMenu()"></div>
@@ -415,14 +380,6 @@
   </footer>
 
  <script>
-   function performSearch(event) {
-    event.preventDefault();
-    const query = document.getElementById('searchQuery').value;
-    const searchUrl = `https://www.google.com/search?q=site:ayoublafriki.github.io/Lafriki+${encodeURIComponent(query)}`;
-    window.open(searchUrl, '_blank');
-  }
-
-   
   function setDarkMode(isDark) {
     const body = document.body;
     const button = document.querySelector('.dark-toggle');
